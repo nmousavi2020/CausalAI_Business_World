@@ -110,4 +110,10 @@ The neural prediction component uses a PyTorch multilayer perceptron (MLP) train
 
 **Naeim Mousavi — 2026**
 
-MIT License.
+## Copyright
+
+Copyright © 2026 Naeim Mousavi. All rights reserved.
+
+## License
+
+This project is licensed under the **MIT License**. See [LICENSE](LICENSE) for details.
