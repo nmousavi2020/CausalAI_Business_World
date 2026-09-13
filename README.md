@@ -1,44 +1,46 @@
 # CausalAI Business World
 
-**Causal AI + World Model + Structured Data ML**
+**Causal AI + World Model + Structured Data ML + PyTorch Neural Network**
 
-A compact research-oriented workflow for structured business data, combining causal-style analysis, business scenario simulation, and neural-network prediction.
+A compact research-oriented machine learning workflow for structured business data, combining causal analysis, business scenario simulation, and a PyTorch neural network for sales prediction.
 
 ## Overview
 
-The project studies how business variables influence sales and simulates business interventions such as:
+The project demonstrates how structured business data can be used to:
 
-* Lowering price
-* Increasing marketing
-* Predicting resulting sales
+* Estimate business-variable effects
+* Simulate business interventions
+* Predict sales with a neural network
+* Evaluate model performance using RMSE and R²
+* Generate publication-quality visualizations
 
-## Pipeline
+## Machine Learning Techniques
+
+* **Linear Regression** — causal-style effect estimation
+* **PyTorch Neural Network (MLP)** — sales prediction
+* **StandardScaler** — feature and target normalization
+* **Train/Test Split** — model evaluation
+* **RMSE / R²** — predictive performance evaluation
+* **Scenario Simulation** — business world-model analysis
+
+## Workflow
 
 ```text
 Structured Business Data
           ↓
+   Linear Regression
      Causal Analysis
           ↓
       World Model
+ Scenario Simulation
           ↓
-   Neural Prediction
+ PyTorch Neural Network
+     Sales Prediction
           ↓
- Business Insights
+    Business Insights
 ```
 
-## Features
-
-* Causal-style estimation of business effects
-* World-model scenario simulation
-* Neural network for sales prediction
-* Standardized feature/target scaling
-* RMSE and R² evaluation
-* High-resolution business visualizations
-* Reproducible synthetic dataset
-
-## Results
-
-Example results:
+## Example Results
 
 ```text
 Price Effect      : -3.032
@@ -60,6 +62,7 @@ CausalAI_Business_World/
 │
 ├── main.py
 ├── README.md
+├── LICENSE
 ├── requirements.txt
 ├── .gitignore
 │
@@ -74,21 +77,21 @@ CausalAI_Business_World/
     └── scenario.png
 ```
 
-## Run
-
-Install dependencies:
+## Installation
 
 ```bash
 python -m pip install -r requirements.txt
 ```
 
-Run the complete workflow:
+## Run
 
 ```bash
 python main.py
 ```
 
 ## Outputs
+
+The workflow generates:
 
 ```text
 data/business_data.csv
@@ -97,12 +100,14 @@ plots/causal_effects.png
 plots/scenario.png
 ```
 
-## Note
+## Research Note
 
-The causal component uses multivariate linear regression to estimate causal-style effects on synthetic controlled data. It is intended as a compact research/portfolio demonstration rather than a full causal identification framework.
+The causal component uses multivariate linear regression to estimate causal-style effects on controlled synthetic data. It is a compact research and portfolio demonstration, not a full causal identification framework.
+
+The neural prediction component uses a PyTorch multilayer perceptron (MLP) trained on standardized structured business data.
 
 ## Author
 
 **Naeim Mousavi — 2026**
 
-Copyright © 2026 Naeim Mousavi. All rights reserved.
+MIT License.
